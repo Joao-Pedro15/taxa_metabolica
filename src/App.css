@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
+  overflow-x: hidden;
   min-height: 100vh;
+  width: 100%;
+  background-color: #02044a;
+  color: aliceblue;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+} 
+
+.formStep{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.content_sex{
+  width: 460px;
+  height: 100px;
+  margin-top: 20px;
+  background-color: #00ffff;
+  color: #fff;
+  border: 5px solid skyblue;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 600;
+  transition: all .4s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.content_sex:last-of-type{
+  background-color: palevioletred;
+  border-color: pink;
+}
+
+.content_sex:hover{
+  transform: scale(1.1);
+}
+
+.content_sex.active{
+  background-color: #fff;
+  color: #ccc;
+  border-color: #ccc;
+}
+
+.content_sex i{
+  font-size: 70px;
+}
+
+@media(max-width: 930px){
+  .formStep{
+    flex-direction: column;
+    height: 100vh;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
   }
 }

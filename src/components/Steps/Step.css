@@ -1,0 +1,38 @@
+.step{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    align-items: flex-start;
+    position: relative;
+    color: #fff;
+  }
+  
+
+  .step input{
+    color: #fff;
+    margin-top: 10px;
+    width: 550px;
+  }
+
+  .btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+@media(max-width: 930px){
+  .step{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .step input{
+    margin: 5px;
+    width: 400px;
+  }
+}
+
