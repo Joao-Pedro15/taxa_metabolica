@@ -45,7 +45,7 @@ export default function Aside() {
                     <small>Veja o resultado da sua taxa metabolica basal</small>
                 </div>
                 <div className='icon'>
-                    <i class="fas fa-clipboard-list"></i>
+                    <i className="fas fa-clipboard-list"></i>
                 </div>
                 <div className='ball'></div>
             </div>

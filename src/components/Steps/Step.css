@@ -1,38 +1,35 @@
 .step{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 60%;
-    align-items: flex-start;
-    position: relative;
-    color: #fff;
-  }
-  
-
-  .step input{
-    color: #fff;
-    margin-top: 10px;
-    width: 550px;
-  }
-
-  .btns{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 70%;
-  }
-
-@media(max-width: 930px){
-  .step{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .step input{
-    margin: 5px;
-    width: 400px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 90vh;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  color: #fff;
 }
 
+.step input{
+  color: #fff;
+  margin-top: 10px;
+  width: 550px;
+}
+
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+
+@media screen and (max-width: 960px) {
+  .step{
+    align-items: center;
+  }
+
+  .step input{
+    width: 70vw;
+  }
+}
